@@ -1,24 +1,22 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
 import Counter from "../components/Counter";
 import Controls from "../components/Controls";
 import Link from "next/link";
 
 const Home: NextPage = () => {
-	return (
-		<div className={styles.container}>
-			<Head>
-				<title>Zustand Example</title>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-			<h1>Second Page</h1>
-			<Counter />
-			<Controls />
-			<Link href="/">Go to first page</Link>
+    return (
+        <div>
+            <Head>
+                <title>Zustand Example</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <h1>Second Page</h1>
+            <Counter />
+            <Controls />
+            <Link href="/">Go to first page</Link>
+        </div>
+    );
+};
 
-		</div>
-	)
-}
-
-export default Home
+export default Home;

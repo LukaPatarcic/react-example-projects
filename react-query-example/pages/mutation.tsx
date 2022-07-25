@@ -5,7 +5,7 @@ const Mutation = () => {
 	const mutation = useMutation((newTodo: any) => addTodo(newTodo))
 
 	return (
-		<div>
+		<div> 
 			{mutation.isLoading ? (
 				'Adding todo...'
 			) : (

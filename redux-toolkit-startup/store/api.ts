@@ -1,8 +1,8 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { HYDRATE } from 'next-redux-wrapper';
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { HYDRATE } from "next-redux-wrapper";
 
 export const baseApi = createApi({
-    reducerPath: 'baseApi',
+    reducerPath: "baseApi",
     refetchOnFocus: true,
     refetchOnReconnect: true,
     extractRehydrationInfo(action, { reducerPath }) {
@@ -10,7 +10,7 @@ export const baseApi = createApi({
             return action.payload[reducerPath];
         }
     },
-    tagTypes: ['Todos'],
+    tagTypes: ["Todos"],
     baseQuery: fetchBaseQuery({
         baseUrl: process.env.NEXT_PUBLIC_API_URL,
     }),
