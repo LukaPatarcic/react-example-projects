@@ -1,0 +1,16 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.format": true,
+    "source.fixAll.stylelint": true
+  },
+  "eslint.validate": ["javascript", "typescript"],
+  "debug.javascript.autoAttachFilter": "disabled",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}
