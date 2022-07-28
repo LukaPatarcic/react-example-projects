@@ -55,8 +55,14 @@ const Todos: NextPage = () => {
                         }
                     >
                         {todo.title} - {todo.description} -{' '}
-                        <i onClick={() => deleteTodo(todo.id)}>🗑️</i>
                         <i
+                            style={{ cursor: 'pointer' }}
+                            onClick={() => deleteTodo(todo.id)}
+                        >
+                            🗑️
+                        </i>
+                        <i
+                            style={{ cursor: 'pointer' }}
                             onClick={() =>
                                 patchTodo({ ...todo, status: 'done' })
                             }

@@ -1,12 +1,12 @@
 import React from "react";
-import useStore from "../store/fetchStore";
+import { useFetch } from "../store/fetchStore";
 import Link from "next/link";
 
 const FetchDataZustand = () => {
-    const data = useStore((state) => state.data);
-    const loading = useStore((state) => state.loading);
-    const hasErrors = useStore((state) => state.hasErrors);
-    const fetchData = useStore((state) => state.fetch);
+    const data = useFetch((state) => state.data);
+    const loading = useFetch((state) => state.loading);
+    const hasErrors = useFetch((state) => state.hasErrors);
+    const fetchData = useFetch((state) => state.fetch);
 
     if (loading) {
         return <p>Loading</p>;
